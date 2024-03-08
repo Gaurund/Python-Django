@@ -79,3 +79,67 @@ INFO 2024-03-08 15:32:37,653 autoreload 7272 11248 D:\Мои документы\Downloads\01
 INFO 2024-03-08 15:32:38,082 autoreload 3492 16844 Watching for file changes with StatReloader
 INFO 2024-03-08 15:32:45,994 views 3492 6816 Index page accessed
 INFO 2024-03-08 15:32:45,994 basehttp 3492 6816 "GET / HTTP/1.1" 200 461
+INFO 2024-03-08 15:55:34,603 autoreload 824 8936 Watching for file changes with StatReloader
+ERROR 2024-03-08 15:55:37,976 log 824 3576 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 11, in index
+    template = loader.get_template("templates/index.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+ERROR 2024-03-08 15:55:37,977 basehttp 824 3576 "GET / HTTP/1.1" 500 71413
+INFO 2024-03-08 15:56:29,076 autoreload 824 8936 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:56:29,508 autoreload 9792 16804 Watching for file changes with StatReloader
+INFO 2024-03-08 15:57:31,020 autoreload 9792 16804 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:57:31,449 autoreload 17576 16680 Watching for file changes with StatReloader
+INFO 2024-03-08 16:01:37,178 autoreload 17576 16680 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 16:01:37,605 autoreload 3536 3484 Watching for file changes with StatReloader
+ERROR 2024-03-08 16:01:44,391 log 3536 17660 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 11, in index
+    template = loader.get_template("templates/index.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+ERROR 2024-03-08 16:01:44,393 basehttp 3536 17660 "GET / HTTP/1.1" 500 71413
+ERROR 2024-03-08 16:01:46,662 log 3536 17660 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 11, in index
+    template = loader.get_template("templates/index.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+ERROR 2024-03-08 16:01:46,664 basehttp 3536 17660 "GET / HTTP/1.1" 500 71256
+INFO 2024-03-08 16:02:21,683 autoreload 3536 3484 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 16:02:22,119 autoreload 684 2664 Watching for file changes with StatReloader
+INFO 2024-03-08 16:02:23,281 views 684 824 Index page accessed
+INFO 2024-03-08 16:02:23,282 basehttp 684 824 "GET / HTTP/1.1" 200 456
+INFO 2024-03-08 16:02:58,735 autoreload 684 2664 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 16:02:59,171 autoreload 17080 13100 Watching for file changes with StatReloader
+INFO 2024-03-08 16:03:01,508 views 17080 1776 About page accessed
+INFO 2024-03-08 16:03:01,508 basehttp 17080 1776 "GET /about/ HTTP/1.1" 200 493
+INFO 2024-03-08 16:03:03,025 views 17080 1776 Index page accessed
+INFO 2024-03-08 16:03:03,026 basehttp 17080 1776 "GET / HTTP/1.1" 200 456
+INFO 2024-03-08 16:03:03,877 views 17080 1776 About page accessed
+INFO 2024-03-08 16:03:03,878 basehttp 17080 1776 "GET /about/ HTTP/1.1" 200 493
