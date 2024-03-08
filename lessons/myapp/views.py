@@ -7,7 +7,7 @@ from django.template import loader
 logger = logging.getLogger(__name__)
 
 
-def index(response):
+def index(request):
     template = loader.get_template("index.html")
     logger.info('Index page accessed')
     return HttpResponse(template.render())
