@@ -1,0 +1,81 @@
+INFO 2024-03-08 14:58:30,374 autoreload 2208 6860 Watching for file changes with StatReloader
+INFO 2024-03-08 14:58:33,173 basehttp 2208 4248 "GET /task05/headtails/ HTTP/1.1" 200 10
+INFO 2024-03-08 14:59:24,729 autoreload 2208 6860 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 14:59:25,162 autoreload 17856 1960 Watching for file changes with StatReloader
+INFO 2024-03-08 14:59:27,866 basehttp 17856 11396 "GET /task05/headtails/ HTTP/1.1" 200 11
+INFO 2024-03-08 14:59:49,553 autoreload 17856 1960 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 14:59:49,975 autoreload 12880 3956 Watching for file changes with StatReloader
+ERROR 2024-03-08 14:59:51,718 log 12880 17928 Internal Server Error: /task05/headtails/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 25, in headtails
+    logger.info()
+TypeError: Logger.info() missing 1 required positional argument: 'msg'
+ERROR 2024-03-08 14:59:51,720 basehttp 12880 17928 "GET /task05/headtails/ HTTP/1.1" 500 65253
+INFO 2024-03-08 15:00:05,045 autoreload 12880 3956 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 15:00:05,470 autoreload 12076 1084 Watching for file changes with StatReloader
+INFO 2024-03-08 15:00:09,803 basehttp 12076 18036 "GET /task05/headtails/ HTTP/1.1" 200 10
+INFO 2024-03-08 15:05:05,025 autoreload 12076 1084 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 15:05:05,473 autoreload 6860 2208 Watching for file changes with StatReloader
+INFO 2024-03-08 15:07:03,817 autoreload 6860 2208 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 15:07:04,242 autoreload 644 6540 Watching for file changes with StatReloader
+INFO 2024-03-08 15:07:29,763 basehttp 644 684 "GET /task05/dice/ HTTP/1.1" 200 30
+INFO 2024-03-08 15:08:03,741 autoreload 644 6540 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 15:08:04,175 autoreload 14132 8424 Watching for file changes with StatReloader
+INFO 2024-03-08 15:09:56,202 autoreload 14132 8424 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\lessons\settings.py changed, reloading.
+INFO 2024-03-08 15:09:56,634 autoreload 11512 17796 Watching for file changes with StatReloader
+INFO 2024-03-08 15:10:05,248 views 11512 1976 Dice was tossed
+INFO 2024-03-08 15:10:05,249 basehttp 11512 1976 "GET /task05/dice/ HTTP/1.1" 200 30
+INFO 2024-03-08 15:10:09,501 views 11512 1976 It's head!
+INFO 2024-03-08 15:10:09,502 basehttp 11512 1976 "GET /task05/headtails/ HTTP/1.1" 200 10
+INFO 2024-03-08 15:10:10,270 views 11512 1976 It's tails!
+INFO 2024-03-08 15:10:10,271 basehttp 11512 1976 "GET /task05/headtails/ HTTP/1.1" 200 11
+INFO 2024-03-08 15:10:22,163 views 11512 1976 Dice was tossed
+INFO 2024-03-08 15:10:22,164 basehttp 11512 1976 "GET /task05/dice/ HTTP/1.1" 200 30
+INFO 2024-03-08 15:11:14,864 autoreload 11512 17796 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 15:11:15,292 autoreload 18020 8520 Watching for file changes with StatReloader
+INFO 2024-03-08 15:11:16,360 views 18020 4024 Dice was tossed and gave number 3
+INFO 2024-03-08 15:11:16,361 basehttp 18020 4024 "GET /task05/dice/ HTTP/1.1" 200 30
+INFO 2024-03-08 15:11:16,792 views 18020 4024 Dice was tossed and gave number 2
+INFO 2024-03-08 15:11:16,792 basehttp 18020 4024 "GET /task05/dice/ HTTP/1.1" 200 30
+INFO 2024-03-08 15:11:17,157 views 18020 4024 Dice was tossed and gave number 1
+INFO 2024-03-08 15:11:17,158 basehttp 18020 4024 "GET /task05/dice/ HTTP/1.1" 200 30
+INFO 2024-03-08 15:11:56,045 autoreload 18020 8520 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-08 15:11:56,464 autoreload 4976 12896 Watching for file changes with StatReloader
+INFO 2024-03-08 15:12:02,031 views 4976 2688 The random number from 0 to 100 is 94
+INFO 2024-03-08 15:12:02,032 basehttp 4976 2688 "GET /task05/random/ HTTP/1.1" 200 37
+INFO 2024-03-08 15:12:02,293 views 4976 2688 The random number from 0 to 100 is 28
+INFO 2024-03-08 15:12:02,293 basehttp 4976 2688 "GET /task05/random/ HTTP/1.1" 200 37
+INFO 2024-03-08 15:12:02,511 views 4976 2688 The random number from 0 to 100 is 67
+INFO 2024-03-08 15:12:02,512 basehttp 4976 2688 "GET /task05/random/ HTTP/1.1" 200 37
+INFO 2024-03-08 15:12:02,686 views 4976 2688 The random number from 0 to 100 is 99
+INFO 2024-03-08 15:12:02,686 basehttp 4976 2688 "GET /task05/random/ HTTP/1.1" 200 37
+INFO 2024-03-08 15:12:02,901 views 4976 2688 The random number from 0 to 100 is 3
+INFO 2024-03-08 15:12:02,901 basehttp 4976 2688 "GET /task05/random/ HTTP/1.1" 200 36
+INFO 2024-03-08 15:17:28,680 basehttp 4976 17796 "GET / HTTP/1.1" 200 12
+INFO 2024-03-08 15:19:54,696 autoreload 4976 12896 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:19:55,151 autoreload 18068 18016 Watching for file changes with StatReloader
+INFO 2024-03-08 15:19:58,862 basehttp 18068 4040 "GET / HTTP/1.1" 200 294
+INFO 2024-03-08 15:20:31,958 autoreload 18068 18016 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:20:32,394 autoreload 11404 8796 Watching for file changes with StatReloader
+INFO 2024-03-08 15:21:03,863 autoreload 11404 8796 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:21:04,301 autoreload 12896 4976 Watching for file changes with StatReloader
+INFO 2024-03-08 15:21:10,730 basehttp 12896 4800 "GET /about HTTP/1.1" 301 0
+INFO 2024-03-08 15:21:10,734 basehttp 12896 17764 "GET /about/ HTTP/1.1" 200 396
+INFO 2024-03-08 15:22:46,292 autoreload 12896 4976 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:22:46,726 autoreload 1108 13900 Watching for file changes with StatReloader
+INFO 2024-03-08 15:22:51,254 basehttp 1108 13668 "GET / HTTP/1.1" 200 461
+INFO 2024-03-08 15:22:52,769 basehttp 1108 13668 "GET /about/ HTTP/1.1" 200 401
+INFO 2024-03-08 15:23:16,258 autoreload 1108 13900 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:23:16,686 autoreload 7272 11248 Watching for file changes with StatReloader
+INFO 2024-03-08 15:23:19,846 basehttp 7272 18416 "GET /about/ HTTP/1.1" 200 562
+INFO 2024-03-08 15:23:21,738 basehttp 7272 18416 "GET / HTTP/1.1" 200 461
+INFO 2024-03-08 15:32:37,653 autoreload 7272 11248 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-08 15:32:38,082 autoreload 3492 16844 Watching for file changes with StatReloader
+INFO 2024-03-08 15:32:45,994 views 3492 6816 Index page accessed
+INFO 2024-03-08 15:32:45,994 basehttp 3492 6816 "GET / HTTP/1.1" 200 461
