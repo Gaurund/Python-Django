@@ -1,0 +1,41 @@
+Watching for file changes with StatReloader
+D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /prefix/about/ HTTP/1.1" 200 27
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 2204
+D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\lectures\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 2198
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 2198
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 2198
+Watching for file changes with StatReloader
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 2198
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 2198
+D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\lectures\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 27
+D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\lectures\settings.py changed, reloading.
+INFO 2024-03-08 12:40:35,429 autoreload 5540 14696 Watching for file changes with StatReloader
+ERROR 2024-03-08 12:40:42,087 views 5540 3108 Error in about page: division by zero
+Traceback (most recent call last):
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-03-08 12:40:42,088 basehttp 5540 3108 "GET /about/ HTTP/1.1" 200 27
+ERROR 2024-03-08 12:40:43,630 views 5540 3108 Error in about page: division by zero
+Traceback (most recent call last):
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-03-08 12:40:43,631 basehttp 5540 3108 "GET /about/ HTTP/1.1" 200 27
+INFO 2024-03-08 12:40:46,503 views 5540 3108 Index page accessed
+INFO 2024-03-08 12:40:46,504 basehttp 5540 3108 "GET / HTTP/1.1" 200 13
