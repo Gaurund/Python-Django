@@ -19,11 +19,11 @@ def index(request):
     return HttpResponse("Toss dice")
 
 
-def headtails(request):
-    head_or_tails = ("It's head!", "It's tails!")
-    coin = choice(head_or_tails)
-    logger.info(coin)
-    return HttpResponse(coin)
+def coin(request):
+    head_or_tails = ("It's heads!", "It's tails!")
+    coin_ = choice(head_or_tails)
+    logger.info(coin_)
+    return HttpResponse(coin_)
 
 
 def dice(request):

@@ -143,3 +143,4 @@ INFO 2024-03-08 16:03:03,025 views 17080 1776 Index page accessed
 INFO 2024-03-08 16:03:03,026 basehttp 17080 1776 "GET / HTTP/1.1" 200 456
 INFO 2024-03-08 16:03:03,877 views 17080 1776 About page accessed
 INFO 2024-03-08 16:03:03,878 basehttp 17080 1776 "GET /about/ HTTP/1.1" 200 493
+INFO 2024-03-08 16:39:16,638 autoreload 18036 6720 Watching for file changes with StatReloader

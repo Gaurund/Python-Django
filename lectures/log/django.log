@@ -39,3 +39,16 @@ ZeroDivisionError: division by zero
 INFO 2024-03-08 12:40:43,631 basehttp 5540 3108 "GET /about/ HTTP/1.1" 200 27
 INFO 2024-03-08 12:40:46,503 views 5540 3108 Index page accessed
 INFO 2024-03-08 12:40:46,504 basehttp 5540 3108 "GET / HTTP/1.1" 200 13
+INFO 2024-03-08 18:34:35,770 autoreload 12264 17332 Watching for file changes with StatReloader
+INFO 2024-03-08 18:34:38,437 views 12264 17516 Index page accessed
+INFO 2024-03-08 18:34:38,438 basehttp 12264 17516 "GET / HTTP/1.1" 200 13
+WARNING 2024-03-08 18:34:38,472 log 12264 17516 Not Found: /favicon.ico
+WARNING 2024-03-08 18:34:38,472 basehttp 12264 17516 "GET /favicon.ico HTTP/1.1" 404 2440
+INFO 2024-03-08 18:38:15,399 autoreload 12264 17332 D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\myapp\models.py changed, reloading.
+INFO 2024-03-08 18:38:15,823 autoreload 3708 1480 Watching for file changes with StatReloader
+INFO 2024-03-08 18:41:29,391 autoreload 3708 1480 D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\myapp\models.py changed, reloading.
+INFO 2024-03-08 18:41:29,812 autoreload 2744 12148 Watching for file changes with StatReloader
+INFO 2024-03-08 18:41:53,776 autoreload 2744 12148 D:\Мои документы\Downloads\018\GB\Python.Django\project\lectures\myapp\models.py changed, reloading.
+INFO 2024-03-08 18:41:54,214 autoreload 12168 17016 Watching for file changes with StatReloader
+INFO 2024-03-09 10:25:33,867 autoreload 3204 2304 Watching for file changes with StatReloader
+INFO 2024-03-09 10:56:00,574 autoreload 15064 13464 Watching for file changes with StatReloader
