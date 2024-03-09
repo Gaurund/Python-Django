@@ -9,6 +9,10 @@ from random import choice
 from django.shortcuts import render
 import logging
 from django.http import HttpResponse
+from django.template import loader
+
+
+from .models import CoinFlip
 
 
 logger = logging.getLogger(__name__)
@@ -20,10 +24,16 @@ def index(request):
 
 
 def coin(request):
-    head_or_tails = ("It's heads!", "It's tails!")
-    coin_ = choice(head_or_tails)
-    logger.info(coin_)
-    return HttpResponse(coin_)
+    template = loader.get_template("coin.html")
+    head_or_tails = ("Heads", "Tails")
+    side = choice(head_or_tails)
+    CoinFlip(side=side).save()
+    logger.info(side)
+    context = {
+        'side': side,
+        'last_results': CoinFlip.get_last_flip(10)
+    }
+    return HttpResponse(template.render(context=context))
 
 
 def dice(request):

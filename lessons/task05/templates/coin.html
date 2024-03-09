@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бросок монеты</title>
+</head>
+<body>
+<h1>Монета упала стороной {{ side }}</h1>
+
+<ul>
+    {% for side in last_results %}
+        <li>{{ side }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

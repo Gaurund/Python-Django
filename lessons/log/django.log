@@ -144,3 +144,578 @@ INFO 2024-03-08 16:03:03,026 basehttp 17080 1776 "GET / HTTP/1.1" 200 456
 INFO 2024-03-08 16:03:03,877 views 17080 1776 About page accessed
 INFO 2024-03-08 16:03:03,878 basehttp 17080 1776 "GET /about/ HTTP/1.1" 200 493
 INFO 2024-03-08 16:39:16,638 autoreload 18036 6720 Watching for file changes with StatReloader
+INFO 2024-03-09 12:42:18,316 autoreload 7776 15840 Watching for file changes with StatReloader
+INFO 2024-03-09 12:42:36,409 views 7776 12560 Index page accessed
+INFO 2024-03-09 12:42:36,409 basehttp 7776 12560 "GET / HTTP/1.1" 200 456
+WARNING 2024-03-09 12:42:36,448 log 7776 12560 Not Found: /favicon.ico
+WARNING 2024-03-09 12:42:36,449 basehttp 7776 12560 "GET /favicon.ico HTTP/1.1" 404 2546
+INFO 2024-03-09 12:42:44,428 basehttp 7776 12560 "GET /task05/coin HTTP/1.1" 301 0
+INFO 2024-03-09 12:42:44,430 views 7776 8088 It's tails!
+INFO 2024-03-09 12:42:44,433 basehttp 7776 8088 "GET /task05/coin/ HTTP/1.1" 200 11
+INFO 2024-03-09 12:42:47,047 views 7776 8088 It's heads!
+INFO 2024-03-09 12:42:47,048 basehttp 7776 8088 "GET /task05/coin/ HTTP/1.1" 200 11
+INFO 2024-03-09 12:42:48,647 views 7776 8088 It's tails!
+INFO 2024-03-09 12:42:48,648 basehttp 7776 8088 "GET /task05/coin/ HTTP/1.1" 200 11
+INFO 2024-03-09 12:51:33,939 autoreload 7776 15840 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:51:34,367 autoreload 15948 10576 Watching for file changes with StatReloader
+INFO 2024-03-09 12:51:54,509 autoreload 15948 10576 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:51:54,937 autoreload 10344 7316 Watching for file changes with StatReloader
+INFO 2024-03-09 12:52:09,895 views 10344 5660 It's tails!
+ERROR 2024-03-09 12:52:09,933 log 10344 5660 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 33, in coin
+    return HttpResponse(template.render(coin_, context))
+                        ^^^^^^^^^^^^^^^
+AttributeError: module 'django.utils.translation.template' has no attribute 'render'
+ERROR 2024-03-09 12:52:09,935 basehttp 10344 5660 "GET /task05/coin/ HTTP/1.1" 500 65961
+INFO 2024-03-09 12:52:39,040 autoreload 10344 7316 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:52:39,472 autoreload 17812 15092 Watching for file changes with StatReloader
+INFO 2024-03-09 12:52:54,393 autoreload 17812 15092 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:52:54,820 autoreload 5148 14624 Watching for file changes with StatReloader
+INFO 2024-03-09 12:52:59,113 views 5148 4104 It's heads!
+ERROR 2024-03-09 12:52:59,144 log 5148 4104 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 35, in coin
+    return HttpResponse(template.render(coin_, context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+ERROR 2024-03-09 12:52:59,146 basehttp 5148 4104 "GET /task05/coin/ HTTP/1.1" 500 74150
+INFO 2024-03-09 12:53:23,413 autoreload 5148 14624 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:53:23,841 autoreload 7272 18268 Watching for file changes with StatReloader
+INFO 2024-03-09 12:53:29,312 views 7272 16824 It's tails!
+ERROR 2024-03-09 12:53:29,342 log 7272 16824 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 35, in coin
+    return HttpResponse(template.render(side=coin_, context=context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Template.render() got an unexpected keyword argument 'side'
+ERROR 2024-03-09 12:53:29,343 basehttp 7272 16824 "GET /task05/coin/ HTTP/1.1" 500 66172
+INFO 2024-03-09 12:53:32,061 views 7272 16824 It's heads!
+ERROR 2024-03-09 12:53:32,076 log 7272 16824 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 35, in coin
+    return HttpResponse(template.render(side=coin_, context=context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Template.render() got an unexpected keyword argument 'side'
+ERROR 2024-03-09 12:53:32,077 basehttp 7272 16824 "GET /task05/coin/ HTTP/1.1" 500 66172
+INFO 2024-03-09 12:54:01,725 autoreload 7272 18268 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:54:02,150 autoreload 6436 15980 Watching for file changes with StatReloader
+INFO 2024-03-09 12:54:04,760 views 6436 2588 It's heads!
+INFO 2024-03-09 12:54:04,762 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:09,486 views 6436 2588 It's heads!
+INFO 2024-03-09 12:54:09,488 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:11,054 views 6436 2588 It's heads!
+INFO 2024-03-09 12:54:11,056 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:12,934 views 6436 2588 It's heads!
+INFO 2024-03-09 12:54:12,935 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:14,255 views 6436 2588 It's tails!
+INFO 2024-03-09 12:54:14,256 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:16,141 views 6436 2588 It's tails!
+INFO 2024-03-09 12:54:16,142 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:16,846 views 6436 2588 It's tails!
+INFO 2024-03-09 12:54:16,847 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:17,486 views 6436 2588 It's heads!
+INFO 2024-03-09 12:54:17,487 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:54:18,126 views 6436 2588 It's heads!
+INFO 2024-03-09 12:54:18,127 basehttp 6436 2588 "GET /task05/coin/ HTTP/1.1" 200 227
+INFO 2024-03-09 12:59:03,897 autoreload 6436 15980 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:59:04,328 autoreload 17156 616 Watching for file changes with StatReloader
+INFO 2024-03-09 12:59:51,360 autoreload 17156 616 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 12:59:51,784 autoreload 7524 7936 Watching for file changes with StatReloader
+INFO 2024-03-09 13:00:05,645 autoreload 7524 7936 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:00:06,071 autoreload 3052 13844 Watching for file changes with StatReloader
+INFO 2024-03-09 13:00:10,951 views 3052 15156 tails
+INFO 2024-03-09 13:00:10,953 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 258
+INFO 2024-03-09 13:00:12,068 views 3052 15156 heads
+INFO 2024-03-09 13:00:12,069 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 300
+INFO 2024-03-09 13:00:12,826 views 3052 15156 heads
+INFO 2024-03-09 13:00:12,827 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 342
+INFO 2024-03-09 13:00:13,351 views 3052 15156 tails
+INFO 2024-03-09 13:00:13,352 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 384
+INFO 2024-03-09 13:00:13,867 views 3052 15156 heads
+INFO 2024-03-09 13:00:13,869 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 426
+INFO 2024-03-09 13:00:14,459 views 3052 15156 tails
+INFO 2024-03-09 13:00:14,460 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 468
+INFO 2024-03-09 13:00:14,985 views 3052 15156 heads
+INFO 2024-03-09 13:00:14,986 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 510
+INFO 2024-03-09 13:00:15,401 views 3052 15156 heads
+INFO 2024-03-09 13:00:15,402 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 552
+INFO 2024-03-09 13:00:15,835 views 3052 15156 tails
+INFO 2024-03-09 13:00:15,836 basehttp 3052 15156 "GET /task05/coin/ HTTP/1.1" 200 594
+INFO 2024-03-09 13:03:26,414 autoreload 3052 13844 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:03:26,855 autoreload 13796 18128 Watching for file changes with StatReloader
+INFO 2024-03-09 13:03:29,326 views 13796 6324 heads
+INFO 2024-03-09 13:03:29,328 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 637
+INFO 2024-03-09 13:03:31,235 views 13796 6324 heads
+INFO 2024-03-09 13:03:31,236 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 637
+INFO 2024-03-09 13:03:31,836 views 13796 6324 tails
+INFO 2024-03-09 13:03:31,837 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 637
+INFO 2024-03-09 13:03:32,426 views 13796 6324 heads
+INFO 2024-03-09 13:03:32,428 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 637
+INFO 2024-03-09 13:03:32,943 views 13796 6324 heads
+INFO 2024-03-09 13:03:32,944 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 637
+INFO 2024-03-09 13:05:05,490 views 13796 6324 tails
+INFO 2024-03-09 13:05:05,491 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:11,233 views 13796 6324 heads
+INFO 2024-03-09 13:05:11,238 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:12,081 views 13796 6324 tails
+INFO 2024-03-09 13:05:12,083 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:12,773 views 13796 6324 tails
+INFO 2024-03-09 13:05:12,774 basehttp 13796 6324 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:21,364 autoreload 13796 18128 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:05:21,804 autoreload 6840 1688 Watching for file changes with StatReloader
+INFO 2024-03-09 13:05:22,915 views 6840 4508 heads
+INFO 2024-03-09 13:05:22,916 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:23,106 views 6840 4508 heads
+INFO 2024-03-09 13:05:23,107 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:23,715 views 6840 4508 heads
+INFO 2024-03-09 13:05:23,716 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:24,249 views 6840 4508 tails
+INFO 2024-03-09 13:05:24,254 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:24,739 views 6840 4508 tails
+INFO 2024-03-09 13:05:24,740 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:25,214 views 6840 4508 tails
+INFO 2024-03-09 13:05:25,215 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:25,664 views 6840 4508 tails
+INFO 2024-03-09 13:05:25,665 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:26,006 views 6840 4508 heads
+INFO 2024-03-09 13:05:26,008 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:26,348 views 6840 4508 heads
+INFO 2024-03-09 13:05:26,349 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:26,723 views 6840 4508 heads
+INFO 2024-03-09 13:05:26,725 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:05:27,064 views 6840 4508 tails
+INFO 2024-03-09 13:05:27,065 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+ERROR 2024-03-09 13:05:57,646 log 6840 4508 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 27, in coin
+    template = loader.get_template("coin.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(1)' from 'side.side(1)'
+ERROR 2024-03-09 13:05:57,650 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 500 145258
+ERROR 2024-03-09 13:06:04,354 log 6840 4508 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 27, in coin
+    template = loader.get_template("coin.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(0)' from 'side.side(0)'
+ERROR 2024-03-09 13:06:04,357 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 500 145258
+INFO 2024-03-09 13:06:10,421 views 6840 4508 heads
+INFO 2024-03-09 13:06:10,422 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:06:11,896 views 6840 4508 heads
+INFO 2024-03-09 13:06:11,897 basehttp 6840 4508 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:07:53,744 autoreload 6840 1688 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:07:54,182 autoreload 18088 7756 Watching for file changes with StatReloader
+INFO 2024-03-09 13:07:55,524 views 18088 15812 tails
+INFO 2024-03-09 13:07:55,526 basehttp 18088 15812 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:08:07,692 views 18088 15812 tails
+INFO 2024-03-09 13:08:07,693 basehttp 18088 15812 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:08:08,325 views 18088 15812 tails
+INFO 2024-03-09 13:08:08,326 basehttp 18088 15812 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:10:39,694 views 18088 15812 heads
+INFO 2024-03-09 13:10:39,696 basehttp 18088 15812 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:10:41,986 views 18088 15812 tails
+INFO 2024-03-09 13:10:41,987 basehttp 18088 15812 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:17,739 autoreload 18088 7756 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:12:18,174 autoreload 5852 15848 Watching for file changes with StatReloader
+INFO 2024-03-09 13:12:21,566 views 5852 6284 Heads
+INFO 2024-03-09 13:12:21,568 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:22,573 views 5852 6284 Heads
+INFO 2024-03-09 13:12:22,575 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:23,074 views 5852 6284 Heads
+INFO 2024-03-09 13:12:23,076 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:23,532 views 5852 6284 Heads
+INFO 2024-03-09 13:12:23,533 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:23,923 views 5852 6284 Tails
+INFO 2024-03-09 13:12:23,925 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:24,290 views 5852 6284 Tails
+INFO 2024-03-09 13:12:24,292 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:24,758 views 5852 6284 Tails
+INFO 2024-03-09 13:12:24,759 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:12:25,124 views 5852 6284 Tails
+INFO 2024-03-09 13:12:25,125 basehttp 5852 6284 "GET /task05/coin/ HTTP/1.1" 200 1086
+INFO 2024-03-09 13:13:22,968 autoreload 5852 15848 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:13:23,395 autoreload 17500 10156 Watching for file changes with StatReloader
+INFO 2024-03-09 13:13:55,990 autoreload 17500 10156 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:13:56,424 autoreload 15984 15040 Watching for file changes with StatReloader
+INFO 2024-03-09 13:14:16,575 autoreload 15984 15040 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:14:16,993 autoreload 6736 4708 Watching for file changes with StatReloader
+INFO 2024-03-09 13:14:18,386 views 6736 1776 Tails
+INFO 2024-03-09 13:14:18,388 basehttp 6736 1776 "GET /task05/coin/ HTTP/1.1" 200 926
+INFO 2024-03-09 13:14:40,264 autoreload 6736 4708 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:14:40,702 autoreload 15996 18288 Watching for file changes with StatReloader
+INFO 2024-03-09 13:14:42,602 views 15996 17672 Tails
+INFO 2024-03-09 13:14:42,604 basehttp 15996 17672 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:14:54,769 autoreload 15996 18288 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:14:55,198 autoreload 12368 16680 Watching for file changes with StatReloader
+INFO 2024-03-09 13:14:56,652 views 12368 9392 Tails
+INFO 2024-03-09 13:14:56,653 basehttp 12368 9392 "GET /task05/coin/ HTTP/1.1" 200 936
+INFO 2024-03-09 13:15:26,863 autoreload 12368 16680 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:15:27,313 autoreload 15080 10956 Watching for file changes with StatReloader
+INFO 2024-03-09 13:15:30,033 views 15080 8072 Tails
+INFO 2024-03-09 13:15:30,035 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:35,667 views 15080 8072 Heads
+INFO 2024-03-09 13:15:35,667 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:36,468 views 15080 8072 Heads
+INFO 2024-03-09 13:15:36,473 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:37,017 views 15080 8072 Tails
+INFO 2024-03-09 13:15:37,018 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:37,475 views 15080 8072 Heads
+INFO 2024-03-09 13:15:37,476 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:37,941 views 15080 8072 Heads
+INFO 2024-03-09 13:15:37,942 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:38,450 views 15080 8072 Heads
+INFO 2024-03-09 13:15:38,451 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:38,918 views 15080 8072 Tails
+INFO 2024-03-09 13:15:38,921 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:39,367 views 15080 8072 Tails
+INFO 2024-03-09 13:15:39,368 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:39,808 views 15080 8072 Tails
+INFO 2024-03-09 13:15:39,809 basehttp 15080 8072 "GET /task05/coin/ HTTP/1.1" 200 946
+INFO 2024-03-09 13:15:55,856 autoreload 15080 10956 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:15:56,291 autoreload 17396 16864 Watching for file changes with StatReloader
+INFO 2024-03-09 13:15:58,915 views 17396 10992 Heads
+INFO 2024-03-09 13:15:58,917 basehttp 17396 10992 "GET /task05/coin/ HTTP/1.1" 200 976
+INFO 2024-03-09 13:16:52,793 autoreload 17396 16864 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:16:53,223 autoreload 8356 10124 Watching for file changes with StatReloader
+INFO 2024-03-09 13:16:56,821 views 8356 10460 Heads
+ERROR 2024-03-09 13:16:56,858 log 8356 10460 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 36, in coin
+    return HttpResponse(template.render(context=context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py", line 15, in __str__
+    return f"Сторона: {self.side(side)}, время: {self.timestamp.strftime('%d-%h-%Y, %H:%M:%S')}."
+                                 ^^^^
+NameError: name 'side' is not defined
+ERROR 2024-03-09 13:16:56,863 basehttp 8356 10460 "GET /task05/coin/ HTTP/1.1" 500 114358
+INFO 2024-03-09 13:17:02,304 autoreload 8356 10124 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:17:02,730 autoreload 13076 11036 Watching for file changes with StatReloader
+INFO 2024-03-09 13:17:03,905 views 13076 12728 Heads
+ERROR 2024-03-09 13:17:03,941 log 13076 12728 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 36, in coin
+    return HttpResponse(template.render(context=context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py", line 15, in __str__
+    return f"Сторона: {self.side()}, время: {self.timestamp.strftime('%d-%h-%Y, %H:%M:%S')}."
+                       ^^^^^^^^^^^
+TypeError: 'str' object is not callable
+ERROR 2024-03-09 13:17:03,945 basehttp 13076 12728 "GET /task05/coin/ HTTP/1.1" 500 114388
+INFO 2024-03-09 13:17:08,329 autoreload 13076 11036 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:17:08,771 autoreload 11712 8108 Watching for file changes with StatReloader
+INFO 2024-03-09 13:17:10,354 views 11712 15340 Heads
+ERROR 2024-03-09 13:17:10,389 log 11712 15340 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 36, in coin
+    return HttpResponse(template.render(context=context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py", line 15, in __str__
+    return f"Сторона: {self.side(0)}, время: {self.timestamp.strftime('%d-%h-%Y, %H:%M:%S')}."
+                       ^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+ERROR 2024-03-09 13:17:10,393 basehttp 11712 15340 "GET /task05/coin/ HTTP/1.1" 500 114392
+INFO 2024-03-09 13:17:12,746 views 11712 15340 Heads
+ERROR 2024-03-09 13:17:12,766 log 11712 15340 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 36, in coin
+    return HttpResponse(template.render(context=context))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py", line 15, in __str__
+    return f"Сторона: {self.side(0)}, время: {self.timestamp.strftime('%d-%h-%Y, %H:%M:%S')}."
+                       ^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+ERROR 2024-03-09 13:17:12,769 basehttp 11712 15340 "GET /task05/coin/ HTTP/1.1" 500 114392
+INFO 2024-03-09 13:17:18,692 autoreload 11712 8108 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-09 13:17:19,121 autoreload 1960 12272 Watching for file changes with StatReloader
+INFO 2024-03-09 13:17:20,429 views 1960 9792 Tails
+INFO 2024-03-09 13:17:20,431 basehttp 1960 9792 "GET /task05/coin/ HTTP/1.1" 200 976
+INFO 2024-03-09 13:17:54,716 autoreload 1960 12272 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:17:55,141 autoreload 7584 6664 Watching for file changes with StatReloader
+INFO 2024-03-09 13:17:56,270 views 7584 10344 Heads
+INFO 2024-03-09 13:17:56,272 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 980
+INFO 2024-03-09 13:17:56,594 views 7584 10344 Tails
+INFO 2024-03-09 13:17:56,596 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 984
+INFO 2024-03-09 13:17:57,520 views 7584 10344 Tails
+INFO 2024-03-09 13:17:57,521 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 988
+INFO 2024-03-09 13:17:58,177 views 7584 10344 Heads
+INFO 2024-03-09 13:17:58,179 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 992
+INFO 2024-03-09 13:17:58,619 views 7584 10344 Heads
+INFO 2024-03-09 13:17:58,620 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 996
+INFO 2024-03-09 13:17:58,878 views 7584 10344 Tails
+INFO 2024-03-09 13:17:58,879 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 1000
+INFO 2024-03-09 13:17:59,102 views 7584 10344 Heads
+INFO 2024-03-09 13:17:59,104 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 1004
+INFO 2024-03-09 13:17:59,327 views 7584 10344 Tails
+INFO 2024-03-09 13:17:59,329 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 1008
+INFO 2024-03-09 13:17:59,544 views 7584 10344 Heads
+INFO 2024-03-09 13:17:59,545 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 1012
