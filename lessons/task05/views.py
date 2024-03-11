@@ -1,8 +1,3 @@
-'''
-� Орёл или решка
-� Значение одной из шести граней игрального кубика
-� Случайное число от 0 до 100
-'''
 import random
 from random import choice
 
@@ -23,15 +18,16 @@ def index(request):
     return HttpResponse("Toss dice")
 
 
-def coin(request):
+def coin(request, amount_of_flips=3):
     template = loader.get_template("coin.html")
     head_or_tails = ("Heads", "Tails")
     side = choice(head_or_tails)
     CoinFlip(side=side).save()
+    last_results = CoinFlip.get_last_flip(amount_of_flips)
     logger.info(side)
     context = {
         'side': side,
-        'last_results': CoinFlip.get_last_flip(10)
+        'last_results': last_results
     }
     return HttpResponse(template.render(context=context))
 

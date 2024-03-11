@@ -719,3 +719,86 @@ INFO 2024-03-09 13:17:59,327 views 7584 10344 Tails
 INFO 2024-03-09 13:17:59,329 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 1008
 INFO 2024-03-09 13:17:59,544 views 7584 10344 Heads
 INFO 2024-03-09 13:17:59,545 basehttp 7584 10344 "GET /task05/coin/ HTTP/1.1" 200 1012
+INFO 2024-03-09 13:24:06,067 autoreload 7584 6664 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:24:06,497 autoreload 5148 16984 Watching for file changes with StatReloader
+INFO 2024-03-09 13:25:04,872 autoreload 5148 16984 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-09 13:25:05,302 autoreload 8968 12664 Watching for file changes with StatReloader
+INFO 2024-03-09 13:25:32,516 autoreload 8968 12664 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:25:32,953 autoreload 18128 13860 Watching for file changes with StatReloader
+INFO 2024-03-09 13:26:16,407 autoreload 13288 16740 Watching for file changes with StatReloader
+INFO 2024-03-09 13:26:20,867 views 13288 17624 Heads
+INFO 2024-03-09 13:26:20,869 basehttp 13288 17624 "GET /task05/coin/10 HTTP/1.1" 200 1016
+INFO 2024-03-09 13:26:24,575 views 13288 17624 Tails
+INFO 2024-03-09 13:26:24,577 basehttp 13288 17624 "GET /task05/coin/20 HTTP/1.1" 200 1780
+WARNING 2024-03-09 13:26:28,708 log 13288 17624 Not Found: /task05/coin/
+WARNING 2024-03-09 13:26:28,708 basehttp 13288 17624 "GET /task05/coin/ HTTP/1.1" 404 3164
+INFO 2024-03-09 13:26:47,063 autoreload 13288 16740 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:26:47,505 autoreload 8268 7756 Watching for file changes with StatReloader
+WARNING 2024-03-09 13:26:48,593 log 8268 17804 Not Found: /task05/coin/
+WARNING 2024-03-09 13:26:48,593 basehttp 8268 17804 "GET /task05/coin/ HTTP/1.1" 404 3164
+WARNING 2024-03-09 13:26:50,176 log 8268 17804 Not Found: /task05/coin/
+WARNING 2024-03-09 13:26:50,177 basehttp 8268 17804 "GET /task05/coin/ HTTP/1.1" 404 3164
+INFO 2024-03-09 13:26:53,617 views 8268 17804 Tails
+INFO 2024-03-09 13:26:53,618 basehttp 8268 17804 "GET /task05/coin/1 HTTP/1.1" 200 296
+INFO 2024-03-09 13:26:57,734 views 8268 17804 Tails
+INFO 2024-03-09 13:26:57,739 basehttp 8268 17804 "GET /task05/coin/0 HTTP/1.1" 200 216
+INFO 2024-03-09 13:27:01,380 autoreload 8268 7756 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:27:01,812 autoreload 5844 15028 Watching for file changes with StatReloader
+WARNING 2024-03-09 13:27:05,824 log 5844 5828 Not Found: /task05/coin/
+WARNING 2024-03-09 13:27:05,825 basehttp 5844 5828 "GET /task05/coin/ HTTP/1.1" 404 3164
+INFO 2024-03-09 13:27:21,026 autoreload 5844 15028 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:27:21,451 autoreload 14992 9392 Watching for file changes with StatReloader
+INFO 2024-03-09 13:27:37,363 autoreload 14992 9392 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-09 13:27:37,799 autoreload 15548 14900 Watching for file changes with StatReloader
+ERROR 2024-03-09 13:27:38,914 log 15548 8844 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: coin() missing 1 required positional argument: 'amount_of_flips'
+ERROR 2024-03-09 13:27:38,915 basehttp 15548 8844 "GET /task05/coin/ HTTP/1.1" 500 61523
+INFO 2024-03-09 13:27:49,628 autoreload 15548 14900 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:27:50,078 autoreload 15252 2416 Watching for file changes with StatReloader
+INFO 2024-03-09 13:27:52,463 views 15252 2176 Tails
+INFO 2024-03-09 13:27:52,465 basehttp 15252 2176 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:27:56,231 views 15252 2176 Tails
+INFO 2024-03-09 13:27:56,233 basehttp 15252 2176 "GET /task05/coin/50 HTTP/1.1" 200 4076
+INFO 2024-03-09 13:27:59,405 views 15252 2176 Tails
+INFO 2024-03-09 13:27:59,406 basehttp 15252 2176 "GET /task05/coin/ HTTP/1.1" 200 456
+INFO 2024-03-09 13:28:30,039 autoreload 15252 2416 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-09 13:28:30,465 autoreload 13824 10936 Watching for file changes with StatReloader
+INFO 2024-03-09 13:33:11,245 autoreload 13824 10936 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\models.py changed, reloading.
+INFO 2024-03-09 13:33:11,674 autoreload 18032 17824 Watching for file changes with StatReloader
+INFO 2024-03-09 13:54:45,635 autoreload 18076 18244 Watching for file changes with StatReloader
+INFO 2024-03-09 13:54:52,632 basehttp 18076 14692 "GET /blog/ HTTP/1.1" 200 13
+INFO 2024-03-09 13:55:07,998 autoreload 18076 18244 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\views.py changed, reloading.
+INFO 2024-03-09 13:55:08,436 autoreload 15908 9240 Watching for file changes with StatReloader
+INFO 2024-03-09 13:55:18,176 autoreload 15908 9240 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\views.py changed, reloading.
+INFO 2024-03-09 13:55:18,608 autoreload 15136 6448 Watching for file changes with StatReloader
+INFO 2024-03-09 13:55:19,700 basehttp 15136 3004 "GET /blog/ HTTP/1.1" 200 17
+INFO 2024-03-09 14:01:10,346 autoreload 15136 6448 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:01:10,777 autoreload 2404 12340 Watching for file changes with StatReloader
+INFO 2024-03-09 14:01:38,852 autoreload 2404 12340 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:01:39,264 autoreload 9020 7624 Watching for file changes with StatReloader
+INFO 2024-03-09 14:01:55,017 autoreload 9020 7624 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:01:55,436 autoreload 16248 11616 Watching for file changes with StatReloader
+INFO 2024-03-09 14:02:25,613 autoreload 16248 11616 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:02:26,038 autoreload 12212 11532 Watching for file changes with StatReloader
+INFO 2024-03-09 14:02:59,999 basehttp 12212 1128 "GET /blog/ HTTP/1.1" 200 17
+INFO 2024-03-09 14:04:54,852 autoreload 12212 11532 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:04:55,259 autoreload 14528 5920 Watching for file changes with StatReloader
+INFO 2024-03-09 14:05:42,002 autoreload 14528 5920 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:05:42,430 autoreload 15204 2764 Watching for file changes with StatReloader
+INFO 2024-03-09 14:06:48,083 autoreload 15204 2764 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:06:48,532 autoreload 9948 8836 Watching for file changes with StatReloader
+INFO 2024-03-09 14:06:57,225 autoreload 9948 8836 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:06:57,663 autoreload 15604 10544 Watching for file changes with StatReloader
+INFO 2024-03-09 14:09:29,329 autoreload 15604 10544 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\models.py changed, reloading.
+INFO 2024-03-09 14:09:29,766 autoreload 16124 12372 Watching for file changes with StatReloader
+INFO 2024-03-09 14:10:04,657 autoreload 1316 3064 Watching for file changes with StatReloader
+INFO 2024-03-09 14:29:22,429 autoreload 536 15052 Watching for file changes with StatReloader
+INFO 2024-03-09 14:31:35,038 autoreload 11400 16468 Watching for file changes with StatReloader
+INFO 2024-03-09 14:35:13,735 autoreload 11032 10584 Watching for file changes with StatReloader
