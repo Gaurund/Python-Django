@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+    <div id="menu">
+        <div class="menu-item"><a href="{% url 'coin' %}">Бросим монету</a></div>
+        <div class="menu-item"><a href="{% url 'dice' %}">Бросим игральную кость</a></div>
+        <div class="menu-item"><a href="{% url 'random number' %}">Случайное число от 0 до 100</a></div>
+    </div>
+{% endblock %}

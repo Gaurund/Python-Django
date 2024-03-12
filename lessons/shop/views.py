@@ -5,7 +5,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def index(request):
+def index_shop(request):
     template = loader.get_template("index.html")
     logger.info('Shop page accessed')
     return HttpResponse(template.render())

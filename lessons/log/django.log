@@ -802,3 +802,789 @@ INFO 2024-03-09 14:10:04,657 autoreload 1316 3064 Watching for file changes with
 INFO 2024-03-09 14:29:22,429 autoreload 536 15052 Watching for file changes with StatReloader
 INFO 2024-03-09 14:31:35,038 autoreload 11400 16468 Watching for file changes with StatReloader
 INFO 2024-03-09 14:35:13,735 autoreload 11032 10584 Watching for file changes with StatReloader
+INFO 2024-03-12 12:38:41,754 autoreload 13340 16036 Watching for file changes with StatReloader
+ERROR 2024-03-12 12:38:54,106 log 13340 5244 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 11, in index
+    template = loader.get_template("index.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2024-03-12 12:38:54,108 basehttp 13340 5244 "GET / HTTP/1.1" 500 72387
+WARNING 2024-03-12 12:38:54,197 log 13340 5244 Not Found: /favicon.ico
+WARNING 2024-03-12 12:38:54,197 basehttp 13340 5244 "GET /favicon.ico HTTP/1.1" 404 2756
+INFO 2024-03-12 12:39:32,236 autoreload 13340 16036 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-12 12:39:32,675 autoreload 21116 10164 Watching for file changes with StatReloader
+INFO 2024-03-12 12:39:34,586 views 21116 12116 Index page accessed
+INFO 2024-03-12 12:39:34,589 basehttp 21116 12116 "GET / HTTP/1.1" 200 397
+ERROR 2024-03-12 12:39:36,733 log 21116 12116 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\shop\views.py", line 9, in index
+    template = loader.get_template("index.html")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2024-03-12 12:39:36,734 basehttp 21116 12116 "GET /shop/ HTTP/1.1" 500 72053
+INFO 2024-03-12 12:40:09,807 autoreload 21116 10164 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\lessons\urls.py changed, reloading.
+INFO 2024-03-12 12:40:10,240 autoreload 9008 13148 Watching for file changes with StatReloader
+WARNING 2024-03-12 12:40:11,326 log 9008 16652 Not Found: /shop/
+WARNING 2024-03-12 12:40:11,326 basehttp 9008 16652 "GET /shop/ HTTP/1.1" 404 2633
+INFO 2024-03-12 12:40:11,843 views 9008 16652 Index page accessed
+INFO 2024-03-12 12:40:11,846 basehttp 9008 16652 "GET / HTTP/1.1" 200 397
+INFO 2024-03-12 12:40:12,866 basehttp 9008 16652 "GET /blog/ HTTP/1.1" 200 17
+WARNING 2024-03-12 12:40:16,190 log 9008 16652 Not Found: /about//
+WARNING 2024-03-12 12:40:16,190 basehttp 9008 16652 "GET /about// HTTP/1.1" 404 2639
+WARNING 2024-03-12 12:40:55,888 log 9008 16652 Not Found: /about//
+WARNING 2024-03-12 12:40:55,889 basehttp 9008 16652 "GET /about// HTTP/1.1" 404 2639
+INFO 2024-03-12 12:40:57,069 views 9008 16652 Index page accessed
+ERROR 2024-03-12 12:40:57,108 log 9008 16652 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 13, in index
+    return HttpResponse(template.render())
+                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'myapp/index' not found. 'myapp/index' is not a valid view function or pattern name.
+ERROR 2024-03-12 12:40:57,112 basehttp 9008 16652 "GET / HTTP/1.1" 500 131553
+INFO 2024-03-12 12:42:21,657 autoreload 9008 13148 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\views.py changed, reloading.
+INFO 2024-03-12 12:42:22,094 autoreload 18356 19484 Watching for file changes with StatReloader
+INFO 2024-03-12 12:42:27,170 views 18356 16040 Index page accessed
+INFO 2024-03-12 12:42:27,173 basehttp 18356 16040 "GET / HTTP/1.1" 200 397
+INFO 2024-03-12 12:42:28,581 basehttp 18356 16040 "GET /blog/ HTTP/1.1" 200 17
+INFO 2024-03-12 12:42:32,629 basehttp 18356 16040 "GET /blog/ HTTP/1.1" 200 17
+INFO 2024-03-12 12:42:33,741 views 18356 16040 Index page accessed
+INFO 2024-03-12 12:42:33,742 basehttp 18356 16040 "GET / HTTP/1.1" 200 397
+INFO 2024-03-12 12:42:34,787 basehttp 18356 16040 "GET /blog/ HTTP/1.1" 200 17
+INFO 2024-03-12 12:42:51,780 autoreload 18356 19484 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\blog\urls.py changed, reloading.
+INFO 2024-03-12 12:42:52,232 autoreload 1864 12608 Watching for file changes with StatReloader
+INFO 2024-03-12 12:42:55,313 views 1864 11128 Index page accessed
+INFO 2024-03-12 12:42:55,316 basehttp 1864 11128 "GET / HTTP/1.1" 200 399
+INFO 2024-03-12 12:43:13,574 autoreload 1864 12608 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-12 12:43:14,011 autoreload 3996 22752 Watching for file changes with StatReloader
+INFO 2024-03-12 12:43:20,649 autoreload 3996 22752 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 12:43:21,084 autoreload 13456 22392 Watching for file changes with StatReloader
+INFO 2024-03-12 12:43:29,744 autoreload 13456 22392 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-12 12:43:30,174 autoreload 16244 20312 Watching for file changes with StatReloader
+INFO 2024-03-12 12:43:31,327 views 16244 5348 Index page accessed
+INFO 2024-03-12 12:43:31,330 basehttp 16244 5348 "GET / HTTP/1.1" 200 392
+INFO 2024-03-12 12:44:33,817 autoreload 16244 20312 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\lessons\urls.py changed, reloading.
+INFO 2024-03-12 12:44:34,309 autoreload 7132 6152 Watching for file changes with StatReloader
+INFO 2024-03-12 12:44:39,514 views 7132 13024 Index page accessed
+INFO 2024-03-12 12:44:39,516 basehttp 7132 13024 "GET / HTTP/1.1" 200 392
+INFO 2024-03-12 12:44:59,828 autoreload 7132 6152 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\urls.py changed, reloading.
+INFO 2024-03-12 12:45:00,265 autoreload 18132 11280 Watching for file changes with StatReloader
+INFO 2024-03-12 12:45:01,274 views 18132 21936 Index page accessed
+INFO 2024-03-12 12:45:01,276 basehttp 18132 21936 "GET / HTTP/1.1" 200 391
+WARNING 2024-03-12 12:45:03,683 log 18132 21936 Not Found: /about/
+WARNING 2024-03-12 12:45:03,683 basehttp 18132 21936 "GET /about/ HTTP/1.1" 404 2740
+INFO 2024-03-12 12:45:37,007 autoreload 18132 11280 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\urls.py changed, reloading.
+INFO 2024-03-12 12:45:37,475 autoreload 18200 21172 Watching for file changes with StatReloader
+INFO 2024-03-12 12:45:41,106 views 18200 14144 About page accessed
+INFO 2024-03-12 12:45:41,109 basehttp 18200 14144 "GET /about/ HTTP/1.1" 200 445
+INFO 2024-03-12 12:45:57,794 autoreload 18200 21172 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\urls.py changed, reloading.
+INFO 2024-03-12 12:45:58,239 autoreload 17636 17888 Watching for file changes with StatReloader
+WARNING 2024-03-12 12:46:33,983 log 17636 8012 Not Found: /about/
+WARNING 2024-03-12 12:46:33,984 basehttp 17636 8012 "GET /about/ HTTP/1.1" 404 2740
+INFO 2024-03-12 12:46:43,975 views 17636 8012 About page accessed
+INFO 2024-03-12 12:46:43,978 basehttp 17636 8012 "GET /about HTTP/1.1" 200 444
+WARNING 2024-03-12 12:46:46,860 log 17636 8012 Not Found: /about/
+WARNING 2024-03-12 12:46:46,861 basehttp 17636 8012 "GET /about/ HTTP/1.1" 404 2740
+INFO 2024-03-12 12:50:46,237 autoreload 17636 17888 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\urls.py changed, reloading.
+INFO 2024-03-12 12:50:46,690 autoreload 20544 8228 Watching for file changes with StatReloader
+INFO 2024-03-12 12:52:01,129 views 20544 18868 About page accessed
+INFO 2024-03-12 12:52:01,130 basehttp 20544 18868 "GET /about/ HTTP/1.1" 200 276
+INFO 2024-03-12 12:52:15,428 views 20544 18868 About page accessed
+INFO 2024-03-12 12:52:15,431 basehttp 20544 18868 "GET /about/ HTTP/1.1" 200 446
+WARNING 2024-03-12 12:52:17,645 log 20544 18868 Not Found: /about//
+WARNING 2024-03-12 12:52:17,645 basehttp 20544 18868 "GET /about// HTTP/1.1" 404 2744
+WARNING 2024-03-12 12:52:42,038 log 20544 18868 Not Found: /about//
+WARNING 2024-03-12 12:52:42,039 basehttp 20544 18868 "GET /about// HTTP/1.1" 404 2744
+INFO 2024-03-12 12:52:43,221 views 20544 18868 About page accessed
+INFO 2024-03-12 12:52:43,222 basehttp 20544 18868 "GET /about/ HTTP/1.1" 200 640
+INFO 2024-03-12 12:52:44,730 views 20544 18868 About page accessed
+INFO 2024-03-12 12:52:44,731 basehttp 20544 18868 "GET /about/ HTTP/1.1" 200 640
+INFO 2024-03-12 12:52:46,163 views 20544 18868 Index page accessed
+INFO 2024-03-12 12:52:46,164 basehttp 20544 18868 "GET / HTTP/1.1" 200 588
+INFO 2024-03-12 12:52:47,199 views 20544 18868 Index page accessed
+INFO 2024-03-12 12:52:47,199 basehttp 20544 18868 "GET / HTTP/1.1" 200 588
+INFO 2024-03-12 12:52:48,533 views 20544 18868 About page accessed
+INFO 2024-03-12 12:52:48,534 basehttp 20544 18868 "GET /about/ HTTP/1.1" 200 640
+INFO 2024-03-12 12:54:58,076 autoreload 20544 8228 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-12 12:54:58,533 autoreload 20236 17672 Watching for file changes with StatReloader
+INFO 2024-03-12 12:55:00,368 views 20236 1932 About page accessed
+ERROR 2024-03-12 12:55:00,396 log 20236 1932 Internal Server Error: /about/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'SafeString' object has no attribute 'get'
+ERROR 2024-03-12 12:55:00,397 basehttp 20236 1932 "GET /about/ HTTP/1.1" 500 66693
+INFO 2024-03-12 12:55:17,823 autoreload 20236 17672 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-12 12:55:18,263 autoreload 14368 628 Watching for file changes with StatReloader
+INFO 2024-03-12 13:06:33,501 autoreload 14368 628 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-12 13:06:33,961 autoreload 13644 19248 Watching for file changes with StatReloader
+INFO 2024-03-12 13:06:36,327 views 13644 14492 About page accessed
+INFO 2024-03-12 13:06:36,329 basehttp 13644 14492 "GET /about/ HTTP/1.1" 200 443
+INFO 2024-03-12 13:06:37,771 views 13644 14492 Index page accessed
+ERROR 2024-03-12 13:06:37,807 log 13644 14492 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 13, in index
+    return render(request, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+                         ^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 147, in join
+  File "<frozen genericpath>", line 152, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'Template'
+ERROR 2024-03-12 13:06:37,811 basehttp 13644 14492 "GET / HTTP/1.1" 500 121828
+INFO 2024-03-12 13:07:12,144 autoreload 13644 19248 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-12 13:07:12,583 autoreload 8416 15044 Watching for file changes with StatReloader
+INFO 2024-03-12 13:07:13,611 views 8416 14212 Index page accessed
+INFO 2024-03-12 13:07:13,619 basehttp 8416 14212 "GET / HTTP/1.1" 200 389
+INFO 2024-03-12 13:07:16,763 views 8416 14212 Index page accessed
+INFO 2024-03-12 13:07:16,764 basehttp 8416 14212 "GET / HTTP/1.1" 200 389
+INFO 2024-03-12 13:07:48,248 autoreload 8416 15044 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py changed, reloading.
+INFO 2024-03-12 13:07:48,689 autoreload 15188 15948 Watching for file changes with StatReloader
+INFO 2024-03-12 13:07:50,240 views 15188 13276 About page accessed
+INFO 2024-03-12 13:07:50,245 basehttp 15188 13276 "GET /about/ HTTP/1.1" 200 443
+INFO 2024-03-12 13:07:51,710 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:07:51,711 basehttp 15188 13276 "GET / HTTP/1.1" 200 389
+INFO 2024-03-12 13:07:52,687 views 15188 13276 About page accessed
+INFO 2024-03-12 13:07:52,688 basehttp 15188 13276 "GET /about/ HTTP/1.1" 200 443
+INFO 2024-03-12 13:10:42,603 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:10:42,604 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:11:08,499 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:11:08,501 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:11:10,032 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:11:10,033 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:11:43,332 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:11:43,334 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:12:02,474 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:12:02,476 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:12:56,370 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:12:56,371 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:13:41,299 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:13:41,300 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:14:02,851 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:14:02,853 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:17:06,210 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:17:06,211 basehttp 15188 13276 "GET / HTTP/1.1" 200 231
+INFO 2024-03-12 13:17:19,699 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:17:19,701 basehttp 15188 13276 "GET / HTTP/1.1" 200 240
+INFO 2024-03-12 13:17:55,827 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:17:55,828 basehttp 15188 13276 "GET / HTTP/1.1" 200 240
+INFO 2024-03-12 13:18:06,098 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:18:06,099 basehttp 15188 13276 "GET / HTTP/1.1" 200 240
+INFO 2024-03-12 13:18:22,188 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:18:22,189 basehttp 15188 13276 "GET / HTTP/1.1" 200 240
+INFO 2024-03-12 13:18:32,403 views 15188 13276 Index page accessed
+ERROR 2024-03-12 13:18:32,436 log 15188 13276 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 13, in index
+    return render(request, template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 297, in do_extends
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+ERROR 2024-03-12 13:18:32,441 basehttp 15188 13276 "GET / HTTP/1.1" 500 132169
+INFO 2024-03-12 13:18:56,643 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:18:56,645 basehttp 15188 13276 "GET / HTTP/1.1" 200 395
+INFO 2024-03-12 13:19:22,212 views 15188 13276 Index page accessed
+ERROR 2024-03-12 13:19:22,234 log 15188 13276 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 13, in index
+    return render(request, template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: menu.html
+ERROR 2024-03-12 13:19:22,238 basehttp 15188 13276 "GET / HTTP/1.1" 500 131867
+INFO 2024-03-12 13:19:31,924 views 15188 13276 Index page accessed
+ERROR 2024-03-12 13:19:31,946 log 15188 13276 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\myapp\views.py", line 13, in index
+    return render(request, template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: menu.html
+ERROR 2024-03-12 13:19:31,949 basehttp 15188 13276 "GET / HTTP/1.1" 500 131867
+INFO 2024-03-12 13:19:45,899 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:19:45,901 basehttp 15188 13276 "GET / HTTP/1.1" 200 395
+INFO 2024-03-12 13:19:50,233 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:19:50,233 basehttp 15188 13276 "GET / HTTP/1.1" 200 395
+INFO 2024-03-12 13:19:51,265 views 15188 13276 About page accessed
+INFO 2024-03-12 13:19:51,266 basehttp 15188 13276 "GET /about/ HTTP/1.1" 200 449
+INFO 2024-03-12 13:20:07,677 views 15188 13276 About page accessed
+INFO 2024-03-12 13:20:07,679 basehttp 15188 13276 "GET /about/ HTTP/1.1" 200 449
+INFO 2024-03-12 13:20:10,980 views 15188 13276 About page accessed
+INFO 2024-03-12 13:20:10,982 basehttp 15188 13276 "GET /about/ HTTP/1.1" 200 449
+INFO 2024-03-12 13:20:13,314 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:20:13,315 basehttp 15188 13276 "GET / HTTP/1.1" 200 395
+INFO 2024-03-12 13:20:14,171 views 15188 13276 Index page accessed
+INFO 2024-03-12 13:20:14,172 basehttp 15188 13276 "GET / HTTP/1.1" 200 395
+INFO 2024-03-12 13:20:14,735 views 15188 13276 About page accessed
+INFO 2024-03-12 13:20:14,735 basehttp 15188 13276 "GET /about/ HTTP/1.1" 200 449
+INFO 2024-03-12 13:21:15,899 autoreload 15188 15948 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\lessons\urls.py changed, reloading.
+INFO 2024-03-12 13:21:16,297 autoreload 18164 17636 Watching for file changes with StatReloader
+INFO 2024-03-12 13:24:09,831 autoreload 11624 7156 Watching for file changes with StatReloader
+INFO 2024-03-12 13:24:15,057 views 11624 20092 Index page accessed
+INFO 2024-03-12 13:24:15,058 basehttp 11624 20092 "GET /task05/ HTTP/1.1" 200 9
+INFO 2024-03-12 13:32:55,563 autoreload 11624 7156 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:32:56,008 autoreload 5572 11392 Watching for file changes with StatReloader
+INFO 2024-03-12 13:33:06,810 autoreload 5572 11392 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:33:07,259 autoreload 13792 9972 Watching for file changes with StatReloader
+INFO 2024-03-12 13:33:46,027 autoreload 13792 9972 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:33:46,480 autoreload 7052 20952 Watching for file changes with StatReloader
+INFO 2024-03-12 13:33:52,263 views 7052 18576 Index page accessed
+INFO 2024-03-12 13:33:52,264 basehttp 7052 18576 "GET /task05/ HTTP/1.1" 200 9
+INFO 2024-03-12 13:33:56,806 views 7052 18576 Tails
+ERROR 2024-03-12 13:33:56,843 log 7052 18576 Internal Server Error: /task05/coin/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 32, in coin
+    return render(request, template_name, context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: menu.html
+ERROR 2024-03-12 13:33:56,846 basehttp 7052 18576 "GET /task05/coin/ HTTP/1.1" 500 133358
+INFO 2024-03-12 13:34:16,656 views 7052 18576 Tails
+INFO 2024-03-12 13:34:16,659 basehttp 7052 18576 "GET /task05/coin/ HTTP/1.1" 200 386
+INFO 2024-03-12 13:35:33,140 autoreload 7052 20952 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:35:33,582 autoreload 14876 12588 Watching for file changes with StatReloader
+INFO 2024-03-12 13:35:51,219 views 14876 15272 Heads
+INFO 2024-03-12 13:35:51,225 basehttp 14876 15272 "GET /task05/coin/ HTTP/1.1" 200 386
+INFO 2024-03-12 13:36:11,060 views 14876 15272 Heads
+INFO 2024-03-12 13:36:11,062 basehttp 14876 15272 "GET /task05/coin/ HTTP/1.1" 200 427
+INFO 2024-03-12 13:37:08,609 autoreload 14876 12588 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:37:09,050 autoreload 21272 3884 Watching for file changes with StatReloader
+INFO 2024-03-12 13:37:16,809 views 21272 12968 Dice was tossed and gave number 3
+INFO 2024-03-12 13:37:16,818 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:20,136 views 21272 12968 Dice was tossed and gave number 4
+INFO 2024-03-12 13:37:20,137 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:20,680 views 21272 12968 Dice was tossed and gave number 5
+INFO 2024-03-12 13:37:20,680 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:21,080 views 21272 12968 Dice was tossed and gave number 1
+INFO 2024-03-12 13:37:21,081 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:21,435 views 21272 12968 Dice was tossed and gave number 6
+INFO 2024-03-12 13:37:21,435 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:21,747 views 21272 12968 Dice was tossed and gave number 6
+INFO 2024-03-12 13:37:21,748 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:22,020 views 21272 12968 Dice was tossed and gave number 5
+INFO 2024-03-12 13:37:22,021 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:22,260 views 21272 12968 Dice was tossed and gave number 6
+INFO 2024-03-12 13:37:22,261 basehttp 21272 12968 "GET /task05/dice/ HTTP/1.1" 200 419
+INFO 2024-03-12 13:37:56,356 autoreload 21272 3884 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:37:56,807 autoreload 11484 7088 Watching for file changes with StatReloader
+INFO 2024-03-12 13:38:06,547 autoreload 11484 7088 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:38:06,997 autoreload 20184 14312 Watching for file changes with StatReloader
+INFO 2024-03-12 13:38:14,554 views 20184 15016 The random number from 0 to 100 is 84
+INFO 2024-03-12 13:38:14,562 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 460
+INFO 2024-03-12 13:38:17,122 views 20184 15016 The random number from 0 to 100 is 66
+INFO 2024-03-12 13:38:17,123 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 460
+INFO 2024-03-12 13:38:17,633 views 20184 15016 The random number from 0 to 100 is 25
+INFO 2024-03-12 13:38:17,634 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 460
+INFO 2024-03-12 13:38:18,017 views 20184 15016 The random number from 0 to 100 is 44
+INFO 2024-03-12 13:38:18,017 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 460
+INFO 2024-03-12 13:39:51,586 views 20184 15016 The random number from 0 to 100 is 54
+ERROR 2024-03-12 13:39:51,627 log 20184 15016 Internal Server Error: /task05/random/
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py", line 57, in random_num
+    return render(request, template_name, context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'random_num' not found. 'random_num' is not a valid view function or pattern name.
+ERROR 2024-03-12 13:39:51,633 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 500 183613
+INFO 2024-03-12 13:40:19,627 views 20184 15016 The random number from 0 to 100 is 46
+INFO 2024-03-12 13:40:19,629 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 621
+INFO 2024-03-12 13:40:21,667 views 20184 15016 Tails
+INFO 2024-03-12 13:40:21,668 basehttp 20184 15016 "GET /task05/coin/ HTTP/1.1" 200 588
+INFO 2024-03-12 13:40:24,028 views 20184 15016 Dice was tossed and gave number 3
+INFO 2024-03-12 13:40:24,029 basehttp 20184 15016 "GET /task05/dice/ HTTP/1.1" 200 580
+INFO 2024-03-12 13:40:25,722 views 20184 15016 The random number from 0 to 100 is 15
+INFO 2024-03-12 13:40:25,723 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 621
+INFO 2024-03-12 13:40:28,628 views 20184 15016 The random number from 0 to 100 is 26
+INFO 2024-03-12 13:40:28,629 basehttp 20184 15016 "GET /task05/random/ HTTP/1.1" 200 621
+INFO 2024-03-12 13:42:58,466 autoreload 20184 14312 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:42:58,902 autoreload 18184 19660 Watching for file changes with StatReloader
+INFO 2024-03-12 13:43:12,804 autoreload 18184 19660 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:43:13,241 autoreload 19824 18792 Watching for file changes with StatReloader
+INFO 2024-03-12 13:43:14,225 views 19824 9236 The random number from 0 to 100 is 48
+INFO 2024-03-12 13:43:14,234 basehttp 19824 9236 "GET /task05/random/ HTTP/1.1" 200 626
+INFO 2024-03-12 13:43:15,619 views 19824 9236 Tails
+INFO 2024-03-12 13:43:15,621 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:43:17,187 views 19824 9236 Dice was tossed and gave number 6
+INFO 2024-03-12 13:43:17,188 basehttp 19824 9236 "GET /task05/dice/ HTTP/1.1" 200 585
+INFO 2024-03-12 13:43:18,463 views 19824 9236 The random number from 0 to 100 is 98
+INFO 2024-03-12 13:43:18,464 basehttp 19824 9236 "GET /task05/random/ HTTP/1.1" 200 626
+INFO 2024-03-12 13:43:19,346 views 19824 9236 Tails
+INFO 2024-03-12 13:43:19,348 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:43:23,294 views 19824 9236 Tails
+INFO 2024-03-12 13:43:23,295 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:43:24,129 views 19824 9236 Heads
+INFO 2024-03-12 13:43:24,135 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:43:24,902 views 19824 9236 Heads
+INFO 2024-03-12 13:43:24,903 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:43:25,503 views 19824 9236 Heads
+INFO 2024-03-12 13:43:25,504 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:43:26,094 views 19824 9236 Heads
+INFO 2024-03-12 13:43:26,095 basehttp 19824 9236 "GET /task05/coin/ HTTP/1.1" 200 871
+INFO 2024-03-12 13:50:48,282 autoreload 19824 18792 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-12 13:50:48,692 autoreload 5212 8228 Watching for file changes with StatReloader
+INFO 2024-03-12 13:51:40,453 autoreload 5212 8228 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-12 13:51:40,892 autoreload 18504 8728 Watching for file changes with StatReloader
+INFO 2024-03-12 13:51:51,669 autoreload 18504 8728 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-12 13:51:52,107 autoreload 22384 9156 Watching for file changes with StatReloader
+INFO 2024-03-12 13:53:45,670 autoreload 22384 9156 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 13:53:46,128 autoreload 22084 16552 Watching for file changes with StatReloader
+INFO 2024-03-12 13:56:09,195 autoreload 13848 5460 Watching for file changes with StatReloader
+INFO 2024-03-12 13:56:10,599 views 13848 20696 Heads
+INFO 2024-03-12 13:56:10,607 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:12,107 views 13848 20696 Tails
+INFO 2024-03-12 13:56:12,109 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:12,765 views 13848 20696 Heads
+INFO 2024-03-12 13:56:12,767 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:13,332 views 13848 20696 Tails
+INFO 2024-03-12 13:56:13,333 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:18,075 views 13848 20696 Tails
+INFO 2024-03-12 13:56:18,082 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:18,800 views 13848 20696 Heads
+INFO 2024-03-12 13:56:18,806 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:19,365 views 13848 20696 Heads
+INFO 2024-03-12 13:56:19,367 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 893
+INFO 2024-03-12 13:56:38,464 views 13848 20696 Heads
+INFO 2024-03-12 13:56:38,467 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 885
+INFO 2024-03-12 13:56:40,939 views 13848 20696 Heads
+INFO 2024-03-12 13:56:40,940 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 885
+INFO 2024-03-12 13:56:41,692 views 13848 20696 Tails
+INFO 2024-03-12 13:56:41,695 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 885
+INFO 2024-03-12 13:56:42,273 views 13848 20696 Heads
+INFO 2024-03-12 13:56:42,275 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 885
+INFO 2024-03-12 13:56:42,772 views 13848 20696 Tails
+INFO 2024-03-12 13:56:42,774 basehttp 13848 20696 "GET /task05/coin/ HTTP/1.1" 200 885
+INFO 2024-03-12 13:56:46,282 views 13848 20696 Dice was tossed and gave number 5
+INFO 2024-03-12 13:56:46,290 basehttp 13848 20696 "GET /task05/dice/ HTTP/1.1" 200 592
+INFO 2024-03-12 13:56:47,614 views 13848 20696 Dice was tossed and gave number 6
+INFO 2024-03-12 13:56:47,615 basehttp 13848 20696 "GET /task05/dice/ HTTP/1.1" 200 592
+INFO 2024-03-12 13:57:37,754 views 13848 20696 Dice was tossed and gave number 2
+INFO 2024-03-12 13:57:37,755 basehttp 13848 20696 "GET /task05/dice/ HTTP/1.1" 200 592
+INFO 2024-03-12 13:58:31,243 autoreload 13848 5460 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-12 13:58:31,690 autoreload 21248 7100 Watching for file changes with StatReloader
+INFO 2024-03-12 13:58:34,110 views 21248 17012 Dice was tossed and gave number 1
+INFO 2024-03-12 13:58:34,119 basehttp 21248 17012 "GET /task05/dice/ HTTP/1.1" 200 592
+INFO 2024-03-12 13:59:16,842 views 21248 17012 Tails
+INFO 2024-03-12 13:59:16,845 basehttp 21248 17012 "GET /task05/coin/ HTTP/1.1" 200 863
+INFO 2024-03-12 13:59:18,467 views 21248 17012 Dice was tossed and gave number 6
+INFO 2024-03-12 13:59:18,468 basehttp 21248 17012 "GET /task05/dice/ HTTP/1.1" 200 843
+INFO 2024-03-12 13:59:21,209 views 21248 17012 Dice was tossed and gave number 4
+INFO 2024-03-12 13:59:21,210 basehttp 21248 17012 "GET /task05/dice/ HTTP/1.1" 200 843
+INFO 2024-03-12 14:00:47,167 autoreload 21248 7100 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\models.py changed, reloading.
+INFO 2024-03-12 14:00:47,604 autoreload 22696 12580 Watching for file changes with StatReloader
+INFO 2024-03-12 14:01:10,824 autoreload 22696 12580 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 14:01:11,257 autoreload 1236 13900 Watching for file changes with StatReloader
+INFO 2024-03-12 14:01:22,055 autoreload 1236 13900 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 14:01:22,495 autoreload 4564 10472 Watching for file changes with StatReloader
+INFO 2024-03-12 14:01:33,276 autoreload 4564 10472 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\views.py changed, reloading.
+INFO 2024-03-12 14:02:16,910 autoreload 15112 21424 Watching for file changes with StatReloader
+INFO 2024-03-12 14:02:18,201 views 15112 19244 Dice was tossed and gave number 4
+INFO 2024-03-12 14:02:18,212 basehttp 15112 19244 "GET /task05/dice/ HTTP/1.1" 200 843
+INFO 2024-03-12 14:02:19,918 views 15112 19244 The random number from 0 to 100 is 53
+INFO 2024-03-12 14:02:19,920 basehttp 15112 19244 "GET /task05/random/ HTTP/1.1" 200 717
+INFO 2024-03-12 14:02:21,761 views 15112 19244 The random number from 0 to 100 is 52
+INFO 2024-03-12 14:02:21,767 basehttp 15112 19244 "GET /task05/random/ HTTP/1.1" 200 802
+INFO 2024-03-12 14:02:22,453 views 15112 19244 The random number from 0 to 100 is 79
+INFO 2024-03-12 14:02:22,454 basehttp 15112 19244 "GET /task05/random/ HTTP/1.1" 200 887
+INFO 2024-03-12 14:02:23,477 views 15112 19244 The random number from 0 to 100 is 97
+INFO 2024-03-12 14:02:23,478 basehttp 15112 19244 "GET /task05/random/ HTTP/1.1" 200 887
+INFO 2024-03-12 14:03:45,698 autoreload 15112 21424 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-12 14:03:46,141 autoreload 10884 13692 Watching for file changes with StatReloader
+INFO 2024-03-12 14:03:51,509 autoreload 10884 13692 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-12 14:03:51,948 autoreload 14544 12496 Watching for file changes with StatReloader
+INFO 2024-03-12 14:03:57,367 views 14544 11336 The random number from 0 to 100 is 81
+INFO 2024-03-12 14:03:57,377 basehttp 14544 11336 "GET /task05/random/ HTTP/1.1" 200 908
+WARNING 2024-03-12 14:03:59,956 log 14544 11336 Not Found: /task05/random/10
+WARNING 2024-03-12 14:03:59,957 basehttp 14544 11336 "GET /task05/random/10 HTTP/1.1" 404 3967
+INFO 2024-03-12 14:04:14,375 autoreload 14544 12496 D:\Мои документы\Downloads\018\GB\Python.Django\project\lessons\task05\urls.py changed, reloading.
+INFO 2024-03-12 14:04:14,816 autoreload 11616 5944 Watching for file changes with StatReloader
+INFO 2024-03-12 14:04:15,989 views 11616 20372 The random number from 0 to 100 is 88
+INFO 2024-03-12 14:04:15,999 basehttp 11616 20372 "GET /task05/random/10 HTTP/1.1" 200 1142
+INFO 2024-03-12 14:04:19,322 views 11616 20372 The random number from 0 to 100 is 18
+INFO 2024-03-12 14:04:19,324 basehttp 11616 20372 "GET /task05/random/10 HTTP/1.1" 200 1227
+INFO 2024-03-12 14:04:19,905 views 11616 20372 The random number from 0 to 100 is 52
+INFO 2024-03-12 14:04:19,907 basehttp 11616 20372 "GET /task05/random/10 HTTP/1.1" 200 1312
+INFO 2024-03-12 14:04:20,364 views 11616 20372 The random number from 0 to 100 is 45
+INFO 2024-03-12 14:04:20,365 basehttp 11616 20372 "GET /task05/random/10 HTTP/1.1" 200 1397
+INFO 2024-03-12 14:04:20,772 views 11616 20372 The random number from 0 to 100 is 46
+INFO 2024-03-12 14:04:20,774 basehttp 11616 20372 "GET /task05/random/10 HTTP/1.1" 200 1482
+INFO 2024-03-12 14:04:24,647 views 11616 20372 Dice was tossed and gave number 5
+INFO 2024-03-12 14:04:24,648 basehttp 11616 20372 "GET /task05/dice/ HTTP/1.1" 200 843
+INFO 2024-03-12 14:04:27,172 views 11616 20372 Dice was tossed and gave number 4
+INFO 2024-03-12 14:04:27,174 basehttp 11616 20372 "GET /task05/dice/10 HTTP/1.1" 200 1347
+INFO 2024-03-12 14:04:30,156 views 11616 20372 Tails
+INFO 2024-03-12 14:04:30,157 basehttp 11616 20372 "GET /task05/coin/ HTTP/1.1" 200 863
+INFO 2024-03-12 14:04:32,548 views 11616 20372 Heads
+INFO 2024-03-12 14:04:32,549 basehttp 11616 20372 "GET /task05/coin/10 HTTP/1.1" 200 1479

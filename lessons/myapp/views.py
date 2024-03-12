@@ -8,12 +8,12 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    template = loader.get_template("index.html")
+    template_name = "myapp/index.html"
     logger.info('Index page accessed')
-    return HttpResponse(template.render())
+    return render(request, template_name)
 
 
 def about(request):
-    template = loader.get_template("about.html")
+    template_name = "myapp/about.html"
     logger.info('About page accessed')
-    return HttpResponse(template.render())
+    return render(request, template_name)
