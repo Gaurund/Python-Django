@@ -9,4 +9,5 @@ urlpatterns = [
     path('dice/<int:amount_of_toss>', views.dice, name='dice'),
     path('random/', views.random_num, name='random number'),
     path('random/<int:amount_of_rand>', views.random_num, name='random number'),
+    path('game/', views.game, name="game"),
 ]

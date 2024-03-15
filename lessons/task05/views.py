@@ -5,7 +5,7 @@ from django.shortcuts import render
 import logging
 from django.http import HttpResponse
 from django.template import loader
-
+from .forms import Game
 
 from .models import CoinFlip, DieToss, RandomNum
 
@@ -16,6 +16,29 @@ logger = logging.getLogger(__name__)
 def index_task5(request):
     logger.info('Index page accessed')
     return HttpResponse("Toss dice")
+
+
+def game(request):
+    template_name = 'task05/game.html'
+    if request.method == 'POST':
+        form = Game(request.POST)
+        message = 'Ошибка в данных'
+        if form.is_valid():
+            choice_ = form.cleaned_data['choice']
+            tries = form.cleaned_data['tries']
+            logger.info(f'{choice_} -- {tries}')
+            message = 'Игра выбрана'
+    else:
+        form = Game()
+        message = 'Выберите игру'
+
+    context = {
+        'title': 'Выберите игру',
+        'form': form,
+        'message': message,
+    }
+
+    return render(request,template_name,context)
 
 
 def coin(request, amount_of_flips=3):
