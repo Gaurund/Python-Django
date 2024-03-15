@@ -84,9 +84,7 @@ def add_post(request):
         form = PostForm(request.POST)
         message = 'Ошибка в данных'
         if form.is_valid():
-            cleaned_data = form.cleaned_data
-            post_ = Post(**cleaned_data)
-            post_.save()
+            Post(**form.cleaned_data).save()
             logger.info(f'Пост внесён в базу')
 
     else:
