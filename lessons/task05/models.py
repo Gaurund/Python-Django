@@ -38,4 +38,4 @@ class RandomNum(models.Model):
         return result_[:n]
 
     def __str__(self):
-        return f"Сторона: {self.result}, время: {self.timestamp.strftime('%d-%h-%Y, %H:%M:%S')}."
+        return f"Число: {self.result}, время: {self.timestamp.strftime('%d-%h-%Y, %H:%M:%S')}."

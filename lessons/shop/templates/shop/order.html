@@ -1,0 +1,17 @@
+{% extends 'shop/menu.html' %}
+
+{% block title %}
+    {{ title }}{{ order_pk }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}{{ order_pk }}</h1>
+    <p>
+        Заказ номер {{ order_pk }} сделанный {{ order.client.name }} ({{ order.date }})</br>
+        {% for op in op_list%}
+            <li>{{op.product.name}} - {{op.product.price}} * {{op.op_quantity}}</li>
+        {% endfor %}
+        </br>
+        На сумму: {{ order.total }}</br></br>
+    </p>
+{% endblock %}

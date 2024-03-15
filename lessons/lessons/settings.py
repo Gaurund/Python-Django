@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'task05',
     'blog',
     'shop',
+    'metanit',
 ]
 
 MIDDLEWARE = [
