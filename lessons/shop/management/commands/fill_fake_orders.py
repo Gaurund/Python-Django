@@ -17,7 +17,7 @@ def random_date(start, end):
 
 
 def order_date():
-    start = datetime.datetime(2023, 3, 8, 0, 0, 0)
+    start = datetime.datetime(2024, 2, 14, 0, 0, 0)
     end = datetime.datetime(2024, 3, 14, 0, 0, 0)
     return random_date(start, end)
 
@@ -30,7 +30,7 @@ class Command(BaseCommand):
         'Горчица', 'Малиновое варенье', 'Томатная паста', 'Рыбная консерва', 'Консервированный горошек',
         'Консервированная кукуруза', 'Сгущенка', 'Мед',
     ]
-    ORDERS_PER_PERSON = 3
+    ORDERS_PER_PERSON = 5
     PRODUCTS_PER_ORDER = 5
     MAX_PRODUCTS_IN_ORDER = 5
     PRODUCTS_AMOUNT = 100
@@ -61,7 +61,7 @@ class Command(BaseCommand):
                     OrderProduct(
                         order=order,
                         product=random_product,
-                        quantity=quantity,
+                        op_quantity=quantity,
                     ).save()
                 order.total = total
                 order.save()

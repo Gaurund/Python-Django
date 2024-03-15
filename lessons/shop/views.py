@@ -1,3 +1,5 @@
+import datetime
+
 from django.db.models import F
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -54,6 +56,60 @@ def client(request, client_pk):
     template_name = "shop/client.html"
     client = Client.objects.get(id=client_pk)
     orders = Order.objects.filter(client=client).order_by('date')
+    context = {
+        'title': "Клиент № ",
+        'client': client,
+        'orders': orders
+    }
+
+    return render(
+        request,
+        template_name,
+        context
+    )
+
+
+def client_week(request, client_pk):
+    template_name = "shop/client.html"
+    client = Client.objects.get(id=client_pk)
+    week = datetime.datetime.now() - datetime.timedelta(days=7)
+    orders = Order.objects.filter(client=client, date__gte=week).order_by('date')
+    context = {
+        'title': "Клиент № ",
+        'client': client,
+        'orders': orders
+    }
+
+    return render(
+        request,
+        template_name,
+        context
+    )
+
+
+def client_month(request, client_pk):
+    template_name = "shop/client.html"
+    client = Client.objects.get(id=client_pk)
+    week = datetime.datetime.now() - datetime.timedelta(days=30)
+    orders = Order.objects.filter(client=client, date__gte=week).order_by('date')
+    context = {
+        'title': "Клиент № ",
+        'client': client,
+        'orders': orders
+    }
+
+    return render(
+        request,
+        template_name,
+        context
+    )
+
+
+def client_year(request, client_pk):
+    template_name = "shop/client.html"
+    client = Client.objects.get(id=client_pk)
+    week = datetime.datetime.now() - datetime.timedelta(days=365)
+    orders = Order.objects.filter(client=client, date__gte=week).order_by('date')
     context = {
         'title': "Клиент № ",
         'client': client,
