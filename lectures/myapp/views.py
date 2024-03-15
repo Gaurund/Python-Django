@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 import logging
 from django.http import HttpResponse
 from .models import Author, Post
-from .forms import UserForm
+from .forms import *
 
 logger = logging.getLogger(__name__)
 
@@ -19,6 +19,17 @@ def user_form(request):
     else:
         form = UserForm()
     return render(request, 'myapp/user_form.html', {'form': form})
+
+
+def many_fields_form(request):
+    if request.method == 'POST':
+        form = ManyFieldsFormWidget(request.POST)
+        if form.is_valid():
+            # Делаем что-то с данными
+            logger.info(f'Получили {form.cleaned_data=}.')
+    else:
+        form = ManyFieldsFormWidget()
+    return render(request, 'myapp/many_fields_form.html', {'form': form})
 
 
 def index(request):
