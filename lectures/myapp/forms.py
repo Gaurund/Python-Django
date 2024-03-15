@@ -29,7 +29,8 @@ class ManyFieldsFormWidget(forms.Form):
     age = forms.IntegerField(min_value=18, widget=forms.NumberInput(attrs={'class': 'form-control'}))
     height = forms.FloatField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
     is_active = forms.BooleanField(required=False, widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}))
-    birthdate = forms.DateField(initial=datetime.date.today, widget=forms.DateInput(attrs={'class': 'form-control'}))
+    birthdate = forms.DateField(initial=datetime.date.today,
+                                widget=forms.DateInput(attrs={'class': 'form-control', 'type':'date'}))
     gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female')],
                                widget=forms.RadioSelect(attrs={'class': 'form-check-input'}))
     message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control'}))
