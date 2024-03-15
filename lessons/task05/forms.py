@@ -1,7 +1,7 @@
 from django import forms
 
 
-class Game(forms.Form):
+class GameForm(forms.Form):
     choice = forms.ChoiceField(
         choices=[
             ('C', 'Coin'),

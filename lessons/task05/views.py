@@ -5,10 +5,9 @@ from django.shortcuts import render
 import logging
 from django.http import HttpResponse
 from django.template import loader
-from .forms import Game
+from .forms import GameForm
 
 from .models import CoinFlip, DieToss, RandomNum
-
 
 logger = logging.getLogger(__name__)
 
@@ -19,17 +18,17 @@ def index_task5(request):
 
 
 def game(request):
-    template_name = 'task05/game.html'
+    func = {"C": coin, "D": dice, "R": random_num}
     if request.method == 'POST':
-        form = Game(request.POST)
+        form = GameForm(request.POST)
         message = 'Ошибка в данных'
         if form.is_valid():
             choice_ = form.cleaned_data['choice']
             tries = form.cleaned_data['tries']
             logger.info(f'{choice_} -- {tries}')
-            message = 'Игра выбрана'
+            return func[choice_](request, tries)
     else:
-        form = Game()
+        form = GameForm()
         message = 'Выберите игру'
 
     context = {
@@ -37,8 +36,13 @@ def game(request):
         'form': form,
         'message': message,
     }
+    template_name = 'task05/game.html'
 
-    return render(request,template_name,context)
+    return render(
+        request,
+        template_name,
+        context
+    )
 
 
 def coin(request, amount_of_flips=3):
@@ -58,7 +62,7 @@ def coin(request, amount_of_flips=3):
 
 def dice(request, amount_of_toss=3):
     template_name = "task05/result.html"
-    result = random.randint(1,6)
+    result = random.randint(1, 6)
     DieToss(result=result).save()
     last_results = DieToss.get_last_toss(amount_of_toss)
     logger.info(f"Dice was tossed and gave number {result}")
