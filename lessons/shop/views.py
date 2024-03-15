@@ -56,10 +56,22 @@ def client(request, client_pk):
     template_name = "shop/client.html"
     client = Client.objects.get(id=client_pk)
     orders = Order.objects.filter(client=client).order_by('date')
+
+    products = []
+
+    for order in orders:
+        product_list = OrderProduct.objects.filter(order_id=order.pk).select_related("product")
+        for product in product_list:
+            if product.product.name not in products:
+                products.append(product.product.name)
+
+    products = sorted(products)
+
     context = {
         'title': "Клиент № ",
         'client': client,
-        'orders': orders
+        'orders': orders,
+        'products': products
     }
 
     return render(
@@ -74,10 +86,21 @@ def client_week(request, client_pk):
     client = Client.objects.get(id=client_pk)
     week = datetime.datetime.now() - datetime.timedelta(days=7)
     orders = Order.objects.filter(client=client, date__gte=week).order_by('date')
+    products = []
+
+    for order in orders:
+        product_list = OrderProduct.objects.filter(order_id=order.pk).select_related("product")
+        for product in product_list:
+            if product.product.name not in products:
+                products.append(product.product.name)
+
+    products = sorted(products)
+
     context = {
         'title': "Клиент № ",
         'client': client,
-        'orders': orders
+        'orders': orders,
+        'products': products
     }
 
     return render(
@@ -92,10 +115,21 @@ def client_month(request, client_pk):
     client = Client.objects.get(id=client_pk)
     week = datetime.datetime.now() - datetime.timedelta(days=30)
     orders = Order.objects.filter(client=client, date__gte=week).order_by('date')
+    products = []
+
+    for order in orders:
+        product_list = OrderProduct.objects.filter(order_id=order.pk).select_related("product")
+        for product in product_list:
+            if product.product.name not in products:
+                products.append(product.product.name)
+
+    products = sorted(products)
+
     context = {
         'title': "Клиент № ",
         'client': client,
-        'orders': orders
+        'orders': orders,
+        'products': products
     }
 
     return render(
@@ -110,10 +144,21 @@ def client_year(request, client_pk):
     client = Client.objects.get(id=client_pk)
     week = datetime.datetime.now() - datetime.timedelta(days=365)
     orders = Order.objects.filter(client=client, date__gte=week).order_by('date')
+    products = []
+
+    for order in orders:
+        product_list = OrderProduct.objects.filter(order_id=order.pk).select_related("product")
+        for product in product_list:
+            if product.product.name not in products:
+                products.append(product.product.name)
+
+    products = sorted(products)
+
     context = {
         'title': "Клиент № ",
         'client': client,
-        'orders': orders
+        'orders': orders,
+        'products': products
     }
 
     return render(

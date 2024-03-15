@@ -1,0 +1,30 @@
+{% extends 'shop/menu.html' %}
+
+{% block title %}
+    {{ title }}{{ client.pk }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}{{ client.pk }} под именем {{ client.name }}</h1>
+<p>
+    Сделал следующие заказы:
+</p>
+<ul>
+    {% for o in orders%}
+    <li><a href="{% url 'order_pk' o.id %}">{{ o.date }}</a> на сумму {{ o.total }}</li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for p in products%}
+    <li>{{ p }}</li>
+    {% endfor %}
+</ul>
+<!--    <p>-->
+<!--        Заказ номер {{ order_pk }} сделанный {{ order.client.name }} ({{ order.date }})</br>-->
+<!--        {% for op in op_list%}-->
+<!--            <li>{{op.product.name}} - {{op.product.price}} * {{op.op_quantity}}</li>-->
+<!--        {% endfor %}-->
+<!--        </br>-->
+<!--        На сумму: {{ order.total }}</br></br>-->
+<!--    </p>-->
+{% endblock %}
