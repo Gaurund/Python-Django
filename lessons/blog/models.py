@@ -14,7 +14,7 @@ class Author(models.Model):
         return f'{self.first_name} {self.last_name}'
 
     def __str__(self):
-        return f'Author: {self.full_name}, email: {self.email}, birth day: {self.birth_date}'
+        return self.full_name
 
 
 class Post(models.Model):

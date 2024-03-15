@@ -56,21 +56,10 @@ def add_author(request):
         form = AuthorForm(request.POST)
         message = 'Ошибка в данных'
         if form.is_valid():
-
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
-            email = form.cleaned_data['email']
-            bio = form.cleaned_data['bio']
-            birth_date = form.cleaned_data['birth_date']
-            author = Author(
-                first_name=first_name,
-                last_name=last_name,
-                email=email,
-                bio=bio,
-                birth_date=birth_date,
-            )
+            cleaned_data = form.cleaned_data
+            author = Author(**cleaned_data)
             author.save()
-            logger.info(f'{first_name} {last_name} внесён в базу')
+            logger.info(f'Автор внесён в базу')
 
     else:
         form = AuthorForm()
@@ -82,6 +71,34 @@ def add_author(request):
         'message': message,
     }
     template_name = 'blog/add_author.html'
+
+    return render(
+        request,
+        template_name,
+        context
+    )
+
+
+def add_post(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        message = 'Ошибка в данных'
+        if form.is_valid():
+            cleaned_data = form.cleaned_data
+            post_ = Post(**cleaned_data)
+            post_.save()
+            logger.info(f'Пост внесён в базу')
+
+    else:
+        form = PostForm()
+        message = 'Введите пост'
+
+    context = {
+        'title': 'Пост',
+        'form': form,
+        'message': message,
+    }
+    template_name = 'blog/add_post.html'
 
     return render(
         request,

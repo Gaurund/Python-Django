@@ -16,12 +16,9 @@ class AuthorForm(forms.Form):
     )
 
 
-class Post(forms.Form):
+class PostForm(forms.Form):
     title = forms.CharField(max_length=200)
     content = forms.CharField(widget=forms.Textarea)
     author = forms.ModelChoiceField(queryset=Author.objects.all())
-    timestamp = forms.DateField(
-        widget=forms.DateInput(attrs={'type': 'date'})
-    )
     is_published = forms.BooleanField()
-    views = forms.IntegerField()
+
