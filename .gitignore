@@ -1,2 +1,4 @@
-/lessons/db.sqlite3
-/lectures/db.sqlite3
+/lessons/*.sqlite3
+/lectures/*.sqlite3
+/lectures/media/*.jpg
+/lessons/media/

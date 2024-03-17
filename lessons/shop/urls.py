@@ -8,4 +8,5 @@ urlpatterns = [
     path('client/<int:client_pk>/week/', views.client_week, name="client_week"),
     path('client/<int:client_pk>/month/', views.client_month, name="client_month"),
     path('client/<int:client_pk>/year/', views.client_year, name="client_year"),
+    path('product/add/', views.add_product, name="add_product"),
 ]

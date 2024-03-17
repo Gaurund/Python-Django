@@ -20,6 +20,11 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=16, decimal_places=2)
     quantity = models.IntegerField()
     was_added = models.DateTimeField(default=timezone.now)
+    image = models.ImageField(
+        # verbose_name='Imagen',
+        upload_to='media',
+        null=True,
+        blank=True)
 
     def __str__(self):
         return f'Name: {self.name}, price: {self.price}, quantity: {self.quantity}'

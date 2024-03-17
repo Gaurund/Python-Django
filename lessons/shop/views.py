@@ -1,9 +1,12 @@
 import datetime
 
+from django.core.files.storage import FileSystemStorage
 from django.db.models import F
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+
+from .forms import ProductForm
 from .models import Order, Client, OrderProduct, Product
 import logging
 
@@ -160,6 +163,36 @@ def client_year(request, client_pk):
         'orders': orders,
         'products': products
     }
+
+    return render(
+        request,
+        template_name,
+        context
+    )
+
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        message = 'Ошибка в данных'
+        if form.is_valid():
+            Product(**form.cleaned_data).save()
+            image = form.cleaned_data['image']
+            if image:
+                fs = FileSystemStorage()
+                fs.save(image.name, image)
+            logger.info(f'Продукт внесён в базу')
+
+    else:
+        form = ProductForm()
+        message = 'Введите данные продукта'
+
+    context = {
+        'title': 'Продукт',
+        'form': form,
+        'message': message,
+    }
+    template_name = 'shop/add_product.html'
 
     return render(
         request,
