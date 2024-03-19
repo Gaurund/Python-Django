@@ -11,7 +11,7 @@ class Client(models.Model):
     registered = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return f'Full name: {self.name}. E-mail: {self.email}. Registered since: {self.registered}'
+        return self.name
 
 
 class Product(models.Model):
@@ -27,7 +27,7 @@ class Product(models.Model):
         blank=True)
 
     def __str__(self):
-        return f'Name: {self.name}, price: {self.price}, quantity: {self.quantity}'
+        return self.name
 
 
 class Order(models.Model):
@@ -37,7 +37,7 @@ class Order(models.Model):
     date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return f'{self.client.name} ordered {self.products}'
+        return f'Заказ {self.client.name} сделан {self.date}'
 
     # def save(self, *args, **kwargs):
     #     query = OrderProduct.objects.filter(order=self).annotate(
