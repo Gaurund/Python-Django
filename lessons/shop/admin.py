@@ -1,19 +1,28 @@
 from django.contrib import admin
 from .models import *
 
-admin.site.register(Client)
-admin.site.register(Product)
-admin.site.register(OrderProduct)
+
+@admin.register(Client)
+class ClientAdmin(admin.ModelAdmin):
+    list_display = [
+        'name',
+        'email',
+        'phone',
+        'registered',
+    ]
+
+    search_fields = ['name']
+
+    ordering = ['name', '-registered']
 
 
-# admin.site.register(Order)
+class OrderInlineAdmin(admin.TabularInline):
+    model = Order.products.through
 
-class OrderProductFilter(admin.SimpleListFilter):
-    # def lookups(self, request, model_admin):
-    #     return OrderProduct.objects.filter(order_id=request.order.pk).select_related("product")
-
-    def queryset(self, request, model_admin):
-        return OrderProduct.objects.filter(order_id=request.order.pk).select_related("product")
+    readonly_fields = [
+        'product',
+        'op_quantity',
+    ]
 
 
 @admin.register(Order)
@@ -22,30 +31,34 @@ class OrderAdmin(admin.ModelAdmin):
         'client',
         'total',
         'date',
-
     ]
-
-    # list_filter = [OrderProductFilter]
 
     readonly_fields = [
         'total',
         'date',
     ]
 
-    fieldsets = [
-        (
-            None,
-            {
-                'classes': ['wide'],
-                'fields': ['client', 'total', 'date']
-            }
-        ),
-        # (
-        #     'Продукты',
-        #     {
-        #         'classes': ['wide'],
-        #         'fields': [OrderProductFilter]
-        #     }
-        # )
+    inlines = (OrderInlineAdmin,)
+
+
+@admin.action(description="Сбросить количество в ноль")
+def reset_quantity(modeladmin, request, queryset):
+    queryset.update(quantity=0)
+
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = [
+        'name',
+        'price',
+        'quantity',
     ]
 
+    list_filter = [
+        'price',
+        'quantity',
+    ]
+
+    search_fields = ['name']
+
+    actions = [reset_quantity]
