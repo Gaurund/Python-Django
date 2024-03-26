@@ -1,11 +1,39 @@
 from django.core.files.storage import FileSystemStorage
+from django.db.models import Sum
 from django.shortcuts import render, get_object_or_404
 import logging
 from django.http import HttpResponse
-from .models import Author, Post, User4
+from .models import Author, Post, User4, Category, Product5
 from .forms import *
 
 logger = logging.getLogger(__name__)
+
+
+def total_in_db(request):
+    total = Product5.objects.aggregate(Sum('quantity'))
+    context = {
+        'title': 'Общее количество посчитано в базе данных',
+        'total': total,
+    }
+    return render(request, 'myapp/total_count.html', context)
+
+
+def total_in_view(request):
+    products = Product5.objects.all()
+    total = sum(product.quantity for product in products)
+    context = {
+        'title': 'Общее количество посчитано в представлении',
+        'total': total,
+    }
+    return render(request, 'myapp/total_count.html', context)
+
+
+def total_in_template(request):
+    context = {
+        'title': 'Общее количество посчитано в шаблоне',
+        'products': Product5,
+    }
+    return render(request, 'myapp/total_count.html', context)
 
 
 def user_form(request):
