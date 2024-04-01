@@ -2,3 +2,4 @@
 /lectures/*.sqlite3
 /lectures/media/*.jpg
 /lessons/media/
+/lectures/db_pw.txt
